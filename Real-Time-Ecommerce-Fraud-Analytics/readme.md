@@ -41,7 +41,7 @@ Analytics: Amazon Redshift Spectrum, AWS QuickSight
 Monitoring: Amazon CloudWatch, Amazon SNS
 Infra: AWS SAM / CloudFormation (template.yaml)
 
-##📂 Repository Structure
+## 📂 Repository Structure
 ```
 .
 ├── README.md                        # Project overview
@@ -60,9 +60,9 @@ Infra: AWS SAM / CloudFormation (template.yaml)
 │   └── sample_events.csv             # Synthetic sample events
  ```
 
-##📸 Dashboard Preview
+## 📸 Dashboard Preview
 
-##🔍 Use Cases
+## 🔍 Use Cases
 
 🛡 Fraud Detection – real-time alerts for suspicious transactions
 📈 Business Analytics – monitor purchases, payments, and user behavior
