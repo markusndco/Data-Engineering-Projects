@@ -1,0 +1,1718 @@
+{
+  "dashboard": {
+    "title": "Streaming Content Performance",
+    "description": "Real-time KPIs",
+    "elements": [
+      {
+        "title": "KPI 1",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": []
+        },
+        "vis_config": {
+          "type": "column",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 0,
+        "col": 12
+      },
+      {
+        "title": "KPI 2",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": []
+        },
+        "vis_config": {
+          "type": "line",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 6,
+        "col": 0
+      },
+      {
+        "title": "KPI 3",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": []
+        },
+        "vis_config": {
+          "type": "column",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 6,
+        "col": 12
+      },
+      {
+        "title": "KPI 4",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": [
+            "events_gold.device"
+          ]
+        },
+        "vis_config": {
+          "type": "line",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 12,
+        "col": 0
+      },
+      {
+        "title": "KPI 5",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": []
+        },
+        "vis_config": {
+          "type": "column",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 12,
+        "col": 12
+      },
+      {
+        "title": "KPI 6",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": []
+        },
+        "vis_config": {
+          "type": "line",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 18,
+        "col": 0
+      },
+      {
+        "title": "KPI 7",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": []
+        },
+        "vis_config": {
+          "type": "column",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 18,
+        "col": 12
+      },
+      {
+        "title": "KPI 8",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": [
+            "events_gold.device"
+          ]
+        },
+        "vis_config": {
+          "type": "line",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 24,
+        "col": 0
+      },
+      {
+        "title": "KPI 9",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": []
+        },
+        "vis_config": {
+          "type": "column",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 24,
+        "col": 12
+      },
+      {
+        "title": "KPI 10",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": []
+        },
+        "vis_config": {
+          "type": "line",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 30,
+        "col": 0
+      },
+      {
+        "title": "KPI 11",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": []
+        },
+        "vis_config": {
+          "type": "column",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 30,
+        "col": 12
+      },
+      {
+        "title": "KPI 12",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": [
+            "events_gold.device"
+          ]
+        },
+        "vis_config": {
+          "type": "line",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 36,
+        "col": 0
+      },
+      {
+        "title": "KPI 13",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": []
+        },
+        "vis_config": {
+          "type": "column",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 36,
+        "col": 12
+      },
+      {
+        "title": "KPI 14",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": []
+        },
+        "vis_config": {
+          "type": "line",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 42,
+        "col": 0
+      },
+      {
+        "title": "KPI 15",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": []
+        },
+        "vis_config": {
+          "type": "column",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 42,
+        "col": 12
+      },
+      {
+        "title": "KPI 16",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": [
+            "events_gold.device"
+          ]
+        },
+        "vis_config": {
+          "type": "line",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 48,
+        "col": 0
+      },
+      {
+        "title": "KPI 17",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": []
+        },
+        "vis_config": {
+          "type": "column",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 48,
+        "col": 12
+      },
+      {
+        "title": "KPI 18",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": []
+        },
+        "vis_config": {
+          "type": "line",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 54,
+        "col": 0
+      },
+      {
+        "title": "KPI 19",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": []
+        },
+        "vis_config": {
+          "type": "column",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 54,
+        "col": 12
+      },
+      {
+        "title": "KPI 20",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": [
+            "events_gold.device"
+          ]
+        },
+        "vis_config": {
+          "type": "line",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 60,
+        "col": 0
+      },
+      {
+        "title": "KPI 21",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": []
+        },
+        "vis_config": {
+          "type": "column",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 60,
+        "col": 12
+      },
+      {
+        "title": "KPI 22",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": []
+        },
+        "vis_config": {
+          "type": "line",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 66,
+        "col": 0
+      },
+      {
+        "title": "KPI 23",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": []
+        },
+        "vis_config": {
+          "type": "column",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 66,
+        "col": 12
+      },
+      {
+        "title": "KPI 24",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": [
+            "events_gold.device"
+          ]
+        },
+        "vis_config": {
+          "type": "line",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 72,
+        "col": 0
+      },
+      {
+        "title": "KPI 25",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": []
+        },
+        "vis_config": {
+          "type": "column",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 72,
+        "col": 12
+      },
+      {
+        "title": "KPI 26",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": []
+        },
+        "vis_config": {
+          "type": "line",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 78,
+        "col": 0
+      },
+      {
+        "title": "KPI 27",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": []
+        },
+        "vis_config": {
+          "type": "column",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 78,
+        "col": 12
+      },
+      {
+        "title": "KPI 28",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": [
+            "events_gold.device"
+          ]
+        },
+        "vis_config": {
+          "type": "line",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 84,
+        "col": 0
+      },
+      {
+        "title": "KPI 29",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": []
+        },
+        "vis_config": {
+          "type": "column",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 84,
+        "col": 12
+      },
+      {
+        "title": "KPI 30",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": []
+        },
+        "vis_config": {
+          "type": "line",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 90,
+        "col": 0
+      },
+      {
+        "title": "KPI 31",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": []
+        },
+        "vis_config": {
+          "type": "column",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 90,
+        "col": 12
+      },
+      {
+        "title": "KPI 32",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": [
+            "events_gold.device"
+          ]
+        },
+        "vis_config": {
+          "type": "line",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 96,
+        "col": 0
+      },
+      {
+        "title": "KPI 33",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": []
+        },
+        "vis_config": {
+          "type": "column",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 96,
+        "col": 12
+      },
+      {
+        "title": "KPI 34",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": []
+        },
+        "vis_config": {
+          "type": "line",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 102,
+        "col": 0
+      },
+      {
+        "title": "KPI 35",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": []
+        },
+        "vis_config": {
+          "type": "column",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 102,
+        "col": 12
+      },
+      {
+        "title": "KPI 36",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": [
+            "events_gold.device"
+          ]
+        },
+        "vis_config": {
+          "type": "line",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 108,
+        "col": 0
+      },
+      {
+        "title": "KPI 37",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": []
+        },
+        "vis_config": {
+          "type": "column",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 108,
+        "col": 12
+      },
+      {
+        "title": "KPI 38",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": []
+        },
+        "vis_config": {
+          "type": "line",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 114,
+        "col": 0
+      },
+      {
+        "title": "KPI 39",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": []
+        },
+        "vis_config": {
+          "type": "column",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 114,
+        "col": 12
+      },
+      {
+        "title": "KPI 40",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": [
+            "events_gold.device"
+          ]
+        },
+        "vis_config": {
+          "type": "line",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 120,
+        "col": 0
+      },
+      {
+        "title": "KPI 41",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": []
+        },
+        "vis_config": {
+          "type": "column",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 120,
+        "col": 12
+      },
+      {
+        "title": "KPI 42",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": []
+        },
+        "vis_config": {
+          "type": "line",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 126,
+        "col": 0
+      },
+      {
+        "title": "KPI 43",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": []
+        },
+        "vis_config": {
+          "type": "column",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 126,
+        "col": 12
+      },
+      {
+        "title": "KPI 44",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": [
+            "events_gold.device"
+          ]
+        },
+        "vis_config": {
+          "type": "line",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 132,
+        "col": 0
+      },
+      {
+        "title": "KPI 45",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": []
+        },
+        "vis_config": {
+          "type": "column",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 132,
+        "col": 12
+      },
+      {
+        "title": "KPI 46",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": []
+        },
+        "vis_config": {
+          "type": "line",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 138,
+        "col": 0
+      },
+      {
+        "title": "KPI 47",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": []
+        },
+        "vis_config": {
+          "type": "column",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 138,
+        "col": 12
+      },
+      {
+        "title": "KPI 48",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": [
+            "events_gold.device"
+          ]
+        },
+        "vis_config": {
+          "type": "line",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 144,
+        "col": 0
+      },
+      {
+        "title": "KPI 49",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": []
+        },
+        "vis_config": {
+          "type": "column",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 144,
+        "col": 12
+      },
+      {
+        "title": "KPI 50",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": []
+        },
+        "vis_config": {
+          "type": "line",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 150,
+        "col": 0
+      },
+      {
+        "title": "KPI 51",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": []
+        },
+        "vis_config": {
+          "type": "column",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 150,
+        "col": 12
+      },
+      {
+        "title": "KPI 52",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": [
+            "events_gold.device"
+          ]
+        },
+        "vis_config": {
+          "type": "line",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 156,
+        "col": 0
+      },
+      {
+        "title": "KPI 53",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": []
+        },
+        "vis_config": {
+          "type": "column",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 156,
+        "col": 12
+      },
+      {
+        "title": "KPI 54",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": []
+        },
+        "vis_config": {
+          "type": "line",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 162,
+        "col": 0
+      },
+      {
+        "title": "KPI 55",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": []
+        },
+        "vis_config": {
+          "type": "column",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 162,
+        "col": 12
+      },
+      {
+        "title": "KPI 56",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": [
+            "events_gold.device"
+          ]
+        },
+        "vis_config": {
+          "type": "line",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 168,
+        "col": 0
+      },
+      {
+        "title": "KPI 57",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": []
+        },
+        "vis_config": {
+          "type": "column",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 168,
+        "col": 12
+      },
+      {
+        "title": "KPI 58",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": []
+        },
+        "vis_config": {
+          "type": "line",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 174,
+        "col": 0
+      },
+      {
+        "title": "KPI 59",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": []
+        },
+        "vis_config": {
+          "type": "column",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 174,
+        "col": 12
+      },
+      {
+        "title": "KPI 60",
+        "type": "vis",
+        "model": "bigquery_analytics",
+        "explore": "events_gold",
+        "query": {
+          "fields": [
+            "events_gold.minute",
+            "events_gold.events",
+            "events_gold.unique_users",
+            "events_gold.gmv"
+          ],
+          "filters": {
+            "events_gold.minute": "14 days",
+            "events_gold.country": "US,GB,DE,IN,JP",
+            "events_gold.device": "web,ios,android"
+          },
+          "pivots": [
+            "events_gold.device"
+          ]
+        },
+        "vis_config": {
+          "type": "line",
+          "label_density": "dense"
+        },
+        "height": 6,
+        "width": 12,
+        "row": 180,
+        "col": 0
+      }
+    ]
+  }
+}
