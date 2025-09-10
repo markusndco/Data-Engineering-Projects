@@ -17,7 +17,6 @@ This project demonstrates an **end-to-end streaming analytics pipeline on AWS** 
 
 ## 🏗 Architecture Workflow  
 
-```mermaid
 flowchart LR
     A[🛒 Kinesis Producer<br>(simulated events)] --> B[🌀 Kinesis Stream]
     B --> C[📝 Fraud Detection Lambda<br>(alerts to SNS + CloudWatch)]
