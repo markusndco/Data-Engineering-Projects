@@ -1,0 +1,118 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Real-Time E-commerce Analytics Platform (Kinesis -> EMR/Glue -> S3 + Lambda Alerts)
+
+Parameters:
+  StreamName:
+    Type: String
+    Default: ecommerce-events-stream
+  BucketName:
+    Type: String
+    Default: ecommerce-analytics-data
+  TopicName:
+    Type: String
+    Default: FraudAlerts
+
+Resources:
+  EventsStream:
+    Type: AWS::Kinesis::Stream
+    Properties:
+      Name: !Ref StreamName
+      ShardCount: 2
+
+  DataBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Ref BucketName
+      VersioningConfiguration:
+        Status: Enabled
+
+  FraudAlertsTopic:
+    Type: AWS::SNS::Topic
+    Properties:
+      TopicName: !Ref TopicName
+
+  FirehoseToS3Role:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: firehose.amazonaws.com
+            Action: sts:AssumeRole
+      Policies:
+        - PolicyName: FirehoseS3Write
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - s3:AbortMultipartUpload
+                  - s3:GetBucketLocation
+                  - s3:GetObject
+                  - s3:ListBucket
+                  - s3:ListBucketMultipartUploads
+                  - s3:PutObject
+                Resource:
+                  - !Sub arn:aws:s3:::${BucketName}
+                  - !Sub arn:aws:s3:::${BucketName}/*
+              - Effect: Allow
+                Action: logs:PutLogEvents
+                Resource: "*"
+
+  DeliveryStream:
+    Type: AWS::KinesisFirehose::DeliveryStream
+    Properties:
+      DeliveryStreamName: ecommerce-firehose-to-s3
+      DeliveryStreamType: DirectPut
+      S3DestinationConfiguration:
+        BucketARN: !Sub arn:aws:s3:::${BucketName}
+        RoleARN: !GetAtt FirehoseToS3Role.Arn
+        Prefix: raw/events/!{timestamp:yyyy}/!{timestamp:MM}/!{timestamp:dd}/
+        ErrorOutputPrefix: raw/events/errors/!{firehose:error-output-type}/
+        BufferingHints:
+          IntervalInSeconds: 300
+          SizeInMBs: 128
+        CompressionFormat: GZIP
+
+  FraudFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: RealtimeFraudAlerts
+      Handler: fraud_detection_lambda.lambda_handler
+      Runtime: python3.12
+      Timeout: 30
+      MemorySize: 256
+      Environment:
+        Variables:
+          SNS_TOPIC_ARN: !Ref FraudAlertsTopic
+      Policies:
+        - Statement:
+            - Effect: Allow
+              Action:
+                - sns:Publish
+              Resource: !Ref FraudAlertsTopic
+            - Effect: Allow
+              Action:
+                - cloudwatch:PutMetricData
+              Resource: "*"
+      Events:
+        KinesisTrigger:
+          Type: Kinesis
+          Properties:
+            Stream: !GetAtt EventsStream.Arn
+            StartingPosition: LATEST
+            BatchSize: 100
+            Enabled: true
+
+Outputs:
+  StreamName:
+    Value: !Ref EventsStream
+  DataBucket:
+    Value: !Ref DataBucket
+  FraudFunctionName:
+    Value: !Ref FraudFunction
+  AlertsTopicArn:
+    Value: !Ref FraudAlertsTopic

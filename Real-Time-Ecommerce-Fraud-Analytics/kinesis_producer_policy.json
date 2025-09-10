@@ -1,0 +1,15 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "kinesis:PutRecord",
+        "kinesis:PutRecords",
+        "kinesis:DescribeStream",
+        "kinesis:ListShards"
+      ],
+      "Resource": "arn:aws:kinesis:us-west-2:123456789012:stream/ecommerce-events-stream"
+    }
+  ]
+}
