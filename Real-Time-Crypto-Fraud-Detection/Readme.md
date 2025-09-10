@@ -55,19 +55,18 @@ This project implements a **real-time data engineering pipeline** that ingests, 
 ---
 
 ## 📂 Repository Structure  
-├── data/
-│ ├── sample_transactions.csv # Synthetic crypto transactions
-│ └── fraud_labels.csv # Fraud detection labels
-├── streaming/
-│ ├── kafka_producer.py # Kafka event producer
-│ └── kinesis_ingestion_lambda.py # Kinesis ingestion Lambda
-├── redshift/
-│ └── redshift_schema.sql # Fact/dim schema + feature views
-├── data-quality/
-│ └── great_expectations.json # Data validation config
-├── ml-scoring/
-│ └── fraud_scoring_sagemaker.py # Fraud detection scoring harness
-└── README.md # Project documentation
+.
+├── README.md                         # Project overview
+├── kafka_producer.py                 # Kafka transaction producer
+├── kinesis_ingestion_lambda.py       # Lambda for ingesting to Kinesis/S3
+├── fraud_scoring_sagemaker.py        # Fraud detection ML integration
+├── redshift_schema.sql               # Time-series schema for Redshift
+├── great_expectations/               # Data quality validation configs
+├── datasets/
+│   ├── sample_transactions.csv       # Synthetic sample transaction data
+│   └── fraud_labels.csv              # Fraud ground-truth labels
+└── dashboards/
+    └── streaming_metrics.twbx        # Tableau/Looker dashboards
 
 ## 🚀 Getting Started  
 1. 🖥 Start a **Kafka cluster** or use a managed service  
