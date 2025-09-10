@@ -55,7 +55,7 @@ This project implements a **real-time data engineering pipeline** that ingests, 
 ---
 
 ## 📂 Repository Structure  
-.
+```
 ├── README.md                         # Project overview
 ├── kafka_producer.py                 # Kafka transaction producer
 ├── kinesis_ingestion_lambda.py       # Lambda for ingesting to Kinesis/S3
@@ -67,6 +67,7 @@ This project implements a **real-time data engineering pipeline** that ingests, 
 │   └── fraud_labels.csv              # Fraud ground-truth labels
 └── dashboards/
     └── streaming_metrics.twbx        # Tableau/Looker dashboards
+```
 
 ## 🚀 Getting Started  
 1. 🖥 Start a **Kafka cluster** or use a managed service  
