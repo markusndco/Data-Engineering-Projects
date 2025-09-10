@@ -62,6 +62,8 @@ Infra: AWS SAM / CloudFormation (template.yaml)
 
 ## 📸 Dashboard Preview
 
+![QuickSight Dashboard](quicksight_dashboard.png)
+
 ## 🔍 Use Cases
 
 🛡 Fraud Detection – real-time alerts for suspicious transactions
